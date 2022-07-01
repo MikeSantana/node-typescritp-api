@@ -1,11 +1,8 @@
-import * as path from "path";
-import modulesAlias from "module-alias"; 
+import * as path from 'path';
+import moduleAlias from 'module-alias';
 
-const files  = path.resolve(__dirname, "../../");
+const files = path.resolve(__dirname, '../..');
 
-modulesAlias.addAliases({
-    '@src' : path.join(files, 'src' ),
-    '@test' : path.join(files, 'test' )
-
+moduleAlias.addAliases({
+  '@': path.join(files, 'src')
 });
-
